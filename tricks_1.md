@@ -98,7 +98,7 @@
 		
 		Button:
 			on_press:
-				self.text + '1';print('Hello ',self.text)
+				self.text += '1';print('Hello ',self.text)
 		
 Сколько точно команд можно поместить в событие мне неизвестно,
 но точно достаточно, чтобы сделать интерфейс ваших программ
