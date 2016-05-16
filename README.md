@@ -1,1 +1,4 @@
-# my-test-markdown
+# Kivy-Ru Magazine
+
+Мир вашему дому!
+Если вам есть, что написать о Kivy, то вам сюда!
