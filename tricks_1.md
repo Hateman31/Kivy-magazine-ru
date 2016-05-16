@@ -28,6 +28,7 @@
 но Kivy может. Как?
 
 Вот пример:
+		
 		`#:import os os
 		
 		<RootWidget>:
