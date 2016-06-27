@@ -1,0 +1,42 @@
+#:include action.kv
+        
+<Calculator>:
+    form: form
+	orientation:'vertical'
+    spacing: 6
+    padding: 10
+    action: ''
+    buf:None
+    
+	TextInput:
+        id: form
+        multiline: False
+        size_hint_y:None
+        font_size: 40
+        padding: self.height/2*0.4
+        on_text_validate:
+            if root.buf: root.operation()
+            
+    GridLayout:
+        rows: 3
+        cols: 2
+        spacing:6
+        ActionBtn:
+            action:'summBtn'
+            text:'x+y'
+        ActionBtn:
+            action:'subBtn'
+            text:'x-y'
+        ActionBtn:
+            action:'mulBtn'
+            text:'x*y'
+        ActionBtn:
+            action:'divBtn'
+            text:'x/y'
+        ActionBtn:
+            action:'powerBtn'
+            text:'x^y'
+        ActionBtn:
+            action:'rootBtn'
+            text:'root(x,y)'
+    
