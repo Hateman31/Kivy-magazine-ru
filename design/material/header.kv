@@ -1,0 +1,16 @@
+<Header@AnchorLayout>:
+	size_hint_y:.2
+	padding:10
+	anchor_x:'left'
+	canvas:
+		Clear
+		Color:
+			rgb: blue
+		Rectangle:
+			size: self.size
+			pos: self.pos
+		Color:
+			rgba: 0,0,0,.3
+		Rectangle:
+			size: self.width,3
+			pos: self.x,self.y

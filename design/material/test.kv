@@ -1,0 +1,63 @@
+#:kivy 1.9.1
+#:set blue [.1,.45,.55]
+#:set blue_a [.1,.45,.55,1]
+#:set white [1,1,1,1]
+#:set black [1,1,1,0]
+#:set grey [0,0,0,.2]
+#:include force new_btn.kv
+#:include force new_lbl.kv
+#:include force cell.kv
+#:include force header.kv
+
+<Block@BoxLayout>:		
+	orientation: 'vertical'
+	canvas:
+		Color:
+			rgba: white
+		Rectangle:
+			size: self.size
+			pos: self.pos
+			
+<Body@AnchorLayout>:
+	anchor_x:'left'
+	anchor_y:'top'
+	padding:10
+	
+			
+<GreyTxt@Label>:
+	size_hint_x:.6
+	size:self.texture_size
+	text_size:self.width,self.height
+	valign:'top'
+	font_size:25
+	padding:0,15
+	color: [.3,.3,.3,.6]
+
+# 1) цвета занести в переменные	
+# 2) разнести классы по модулям
+
+<Test>:
+	orientation: 'vertical'
+	Header:
+		Label:
+			size_hint_x:None
+			size:self.texture_size
+			font_size:45
+			text:'Меню'
+	Block:
+		Block:
+			Cell:
+				NewButton:
+					text:'Гайды для новичков'
+				NewButton:
+					text:'Статьи для продвинутых'
+			Body:
+				Block:
+					NewLabel:
+						text:'Новый пост'
+					GreyTxt:
+						text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet dignissim scelerisque. Proin tempus erat.'
+					NewButton:
+						text:'Читать'
+	
+	

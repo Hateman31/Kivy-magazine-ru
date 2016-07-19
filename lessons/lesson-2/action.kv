@@ -1,0 +1,8 @@
+<ActionBtn@Button>:
+    action: ''
+    background_color:(.2,1,.1,1)
+    font_size:35
+    on_press:
+        app.root.buf = app.root.form.text
+        app.root.form.text = ''
+        app.root.action = self.action
