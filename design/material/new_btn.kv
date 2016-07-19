@@ -1,24 +1,10 @@
-<NewButton@Button>:
+<NewButton@Label>:
 	canvas:
-		#Clear
-		Color:
-			rgb: blue
-		Rectangle:
-			pos: self.pos
-			size: self.size
-		Color:
-			rgba: grey
-		Rectangle:			
-			pos: self.x+2.5,self.y-3
-			size: self.size
-		Color:
-			rgba: white
-		Rectangle:			
-			pos: self.pos
-			size: self.texture_size
-			texture: self.texture
+		Color: 
+			rgba: blue_a
+		Line:
+			width: 1.5
+			rectangle: self.pos + self.size
 	font_size:32
-	size: self.texture_size
-	size_hint:None,None
 	padding:4,5
-	color: white
+	color: blue_a

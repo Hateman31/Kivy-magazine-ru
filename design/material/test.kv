@@ -47,10 +47,18 @@
 	Block:
 		Block:
 			Cell:
-				NewButton:
-					text:'Гайды для новичков'
-				NewButton:
-					text:'Статьи для продвинутых'
+				GridLayout:
+					spacing:6
+					rows:2
+					cols:2
+					NewButton:
+						text:'Гайды для новичков'
+					NewButton:
+						text:'Статьи для продвинутых'
+					NewButton:
+						text:'Документация'
+					NewButton:
+						text:'Вопросы и ответы'
 			Body:
 				Block:
 					NewLabel:
@@ -58,6 +66,9 @@
 					GreyTxt:
 						text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet dignissim scelerisque. Proin tempus erat.'
 					NewButton:
+						padding:3,2
+						size_hint:None,None
+						size:self.texture_size
 						text:'Читать'
 	
 	
