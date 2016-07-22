@@ -5,5 +5,5 @@
 * [Гайды для новичков](./guides.md)
 * [Статьи для продвинутых](./advanced.md)
 * [Документация](./documentation.md)
-* [FAQ](./guides.md)
+* [FAQ](./faq.md)
 * [Примеры](./examples.md)
