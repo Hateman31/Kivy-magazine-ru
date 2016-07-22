@@ -8,21 +8,17 @@
 #:include force new_lbl.kv
 #:include force cell.kv
 #:include force header.kv
+#:include body.kv
 
 <Block@BoxLayout>:		
 	orientation: 'vertical'
+	padding:6
 	canvas:
 		Color:
 			rgba: white
 		Rectangle:
 			size: self.size
 			pos: self.pos
-			
-<Body@AnchorLayout>:
-	anchor_x:'left'
-	anchor_y:'top'
-	padding:10
-	
 			
 <GreyTxt@Label>:
 	size_hint_x:.6
