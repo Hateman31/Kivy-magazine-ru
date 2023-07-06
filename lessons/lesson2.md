@@ -1,4 +1,4 @@
->#####Дисклеймер!
+>##### Дисклеймер!
 Настоятельно рекомендую прочитать предыдущую [статью](https://github.com/Hateman31/Kivy-magazine-ru/blob/master/lessons/lesson1.md)
 
 ## Мир вашему дому!
